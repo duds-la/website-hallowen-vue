@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex items-center justify-between container pt-10 ">
+    <nav class="flex items-center justify-between h-32">
     <div class="flex gap-2">
       <h1 class="text-white font-bold text-2xl">Hallow<span class="text-secondary">ee</span>nd</h1>
       <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
