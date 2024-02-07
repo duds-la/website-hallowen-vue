@@ -10,7 +10,7 @@
           </div>
           <p class="text-white leading-loose tracking-wide w-full md:w-[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum fringilla ultricies eget amet blandit quis sit duis. Suspendisse fames venenatis volutpat urna dui. Quisque non diam mi ullamcorper.</p>
           <div class="flex justify-end md:justify-start -mt-7 md:mt-3">
-            <img class="w-12 md:-translate-x-10 scale-x-[-1] md:scale-100" src="../assets/images/footer2-img.webp" alt="">
+            <img class="w-12 md:-translate-x-10 scale-x-[-1] md:scale-100" src="../assets/images/footer2-img.png" alt="">
           </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-12 text-white">
