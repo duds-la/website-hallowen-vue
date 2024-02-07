@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex items-center justify-between h-32">
+  <nav class="flex items-center justify-between h-32">
     <div class="flex gap-2">
       <h1 class="text-white font-bold text-2xl">Hallow<span class="text-secondary">ee</span>nd</h1>
       <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -11,9 +11,31 @@
     <div class="flex items-center gap-10">
       <a class="text-white font-medium text-lg" href="#home">Home</a>
       <a class="text-white font-medium text-lg" href="#category">Category</a>
-      <a class="text-white font-medium text-lg" href="#about">About</a>
-      <a class="text-white font-medium text-lg" href="#tric-or-treat">Tric or Treat</a>
-      <button class="px-8 py-3 rounded-full text-white font-bold text-lg bg-secondary">Donate</button>
+      <a class="text-white font-medium text-lg" href="#trick-or-treat">ToT</a>
+      <button @click="openModal" class="px-8 py-3 rounded-full text-white font-bold text-lg bg-secondary">Donate</button>
     </div>
+    
+    <!-- Modal -->
+    <div v-if="modalOpen" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+      <div class="bg-white p-5 rounded-lg">
+        <p>Você é terrivelmente amável, muito obrigado!</p>
+        <button @click="closeModal" class="px-4 py-2 bg-secondary text-white font-bold rounded-md mt-4">Fechar</button>
+      </div>
+    </div>
+    <!-- Fim do Modal -->
   </nav>
 </template>
+
+<script setup>
+  import { ref } from 'vue';
+
+  const modalOpen = ref(false);
+
+  function openModal() {
+    modalOpen.value = true;
+  }
+
+  function closeModal() {
+    modalOpen.value = false;
+  }
+</script>
