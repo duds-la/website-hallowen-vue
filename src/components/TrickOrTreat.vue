@@ -1,5 +1,5 @@
 <script setup>
-  import tots from "../data/trickOrTreat";
+  import tots from "../data/TrickOrTreat";
 </script>
 
 <template>
